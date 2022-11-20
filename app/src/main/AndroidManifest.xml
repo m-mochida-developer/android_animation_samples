@@ -25,6 +25,22 @@
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
+        <activity
+            android:name=".navigation_animation.NavigationAnimationActivity"
+            android:exported="false"
+            android:theme="@style/Theme.Animation_samples">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".list_samples.SampleActivity"
+            android:exported="false"
+            android:theme="@style/Theme.Animation_samples">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
     </application>
 
 </manifest>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/abc_navigation"
+    app:startDestination="@id/AFragment">
+
+    <fragment
+        android:id="@+id/AFragment"
+        android:name="com.example.animation_samples.navigation_animation.AFragment"
+        android:label="fragment_a"
+        tools:layout="@layout/fragment_a" >
+        <action
+            android:id="@+id/action_AFragment_to_BFragment_no_animation"
+            app:destination="@id/BFragment" />
+        <action
+            android:id="@+id/action_AFragment_to_BFragment_slide_animation"
+            app:destination="@id/BFragment"
+            app:enterAnim="@anim/nav_enter_slide_anim"
+            app:exitAnim="@anim/nav_exit_slide_anim"
+            app:popEnterAnim="@anim/nav_pop_enter_slide_anim"
+            app:popExitAnim="@anim/nav_pop_exit_slide_anim" />
+        <action
+            android:id="@+id/action_AFragment_to_BFragment_unique_animation"
+            app:destination="@id/BFragment"
+            app:enterAnim="@anim/nav_enter_unique_anim"
+            app:exitAnim="@anim/nav_exit_unique_anim"
+            app:popEnterAnim="@anim/nav_pop_enter_unique_anim"
+            app:popExitAnim="@anim/nav_pop_exit_unique_anim" />
+    </fragment>
+    <fragment
+        android:id="@+id/BFragment"
+        android:name="com.example.animation_samples.navigation_animation.BFragment"
+        android:label="fragment_b"
+        tools:layout="@layout/fragment_b" >
+        <action
+            android:id="@+id/action_BFragment_to_CFragment_no_animation"
+            app:destination="@id/CFragment" />
+        <action
+            android:id="@+id/action_BFragment_to_CFragment_slide_animation"
+            app:destination="@id/CFragment"
+            app:enterAnim="@anim/nav_enter_slide_anim"
+            app:exitAnim="@anim/nav_exit_slide_anim"
+            app:popEnterAnim="@anim/nav_pop_enter_slide_anim"
+            app:popExitAnim="@anim/nav_pop_exit_slide_anim" />
+        <action
+            android:id="@+id/action_BFragment_to_CFragment_unique_animation"
+            app:destination="@id/CFragment"
+            app:enterAnim="@anim/nav_enter_unique_anim"
+            app:exitAnim="@anim/nav_exit_unique_anim"
+            app:popEnterAnim="@anim/nav_pop_enter_unique_anim"
+            app:popExitAnim="@anim/nav_pop_exit_unique_anim" />
+    </fragment>
+    <fragment
+        android:id="@+id/CFragment"
+        android:name="com.example.animation_samples.navigation_animation.CFragment"
+        android:label="fragment_c"
+        tools:layout="@layout/fragment_c" />
+</navigation>
